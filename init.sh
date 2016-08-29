@@ -7,7 +7,7 @@ for dotfile in .?*; do
         .. | .git | .gitignore | .gitmodules | .vim)
             continue;;
         *)
-            ln -Fis "$PWD/$dotfiles" $HOME;;
+            ln -Fis "$PWD/$dotfile" $HOME;;
     esac
 done
 
