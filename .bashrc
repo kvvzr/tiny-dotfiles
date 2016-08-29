@@ -2,6 +2,7 @@ export HISTCONTROL=ignoredoth
 export HISTIGNORE="fg*:bg*:cd*:history*:ls*:clear*"
 export HISTTIMEFORMAT='%Y/%m/%d %T : '
 export LESSHISTFILE=-
+export TERM=xterm
 
 shopt -s autocd
 shopt -s cdspell
