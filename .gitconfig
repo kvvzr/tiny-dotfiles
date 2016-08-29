@@ -1,0 +1,27 @@
+[user]
+    name = kvvzr
+    email = kwzr@twinkrun.net
+[alias]
+    ignore = !"f() { local s=$1; shift; \
+      while [ $# -gt 0 ]; do s="$s,$1"; shift; done;\
+      curl "https://www.gitignore.io/api/$s"; }; f"
+    st = status
+    ch = checkout
+    cm = commit
+[core]
+    editor = vim -c \"set fenc=utf-8\"
+    sparsecheckout = true
+[color]
+    ui = auto
+[merge]
+    ff = false
+[push]
+    defalut = simple
+    default = current
+[filter "media"]
+    clean = git-media-clean %f
+    smudge = git-media-smudge %f
+[filter "lfs"]
+	smudge = git-lfs smudge -- %f
+	required = true
+	clean = git-lfs clean -- %f
