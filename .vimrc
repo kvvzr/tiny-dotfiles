@@ -65,3 +65,52 @@ inoremap <silent> jj <ESC>
 
 " 検索のハイライトを消す
 nmap <silent> <Esc><Esc> :nohlsearch<CR>
+
+if has('vim_starting')
+  set runtimepath+=$HOME/.vim/bundle/neobundle.vim
+endif
+
+call neobundle#begin(expand('$HOME/.vim/bundle/'))
+
+NeoBundleFetch 'Shougo/neobundle.vim'
+NeoBundle 'Shougo/unite.vim'
+NeoBundle 'Shougo/vimfiler.vim'
+NeoBundle 'itchyny/lightline.vim'
+NeoBundle 'tomasr/molokai'
+NeoBundle 't9md/vim-choosewin'
+NeoBundle 'tyru/caw.vim.git'
+
+NeoBundleCheck
+
+call neobundle#end()
+
+"caw.vim(コメントアウト)のキーバインド
+nmap <C-K> <Plug>(caw:i:toggle)
+vmap <C-K> <Plug>(caw:i:toggle)
+
+let g:indentLine_faster = 1
+
+let g:vimfiler_as_default_explorer=1
+let g:vimfiler_safe_mode_by_default=0
+" 'v'でファイルを開くときは右側に開く
+let g:netrw_altv = 1
+" 'o'でファイルを開くときは下側に開く
+let g:netrw_alto = 1
+
+augroup VimFiler
+    autocmd Filetype vimfiler nunmap <buffer> -
+augroup END
+
+let g:choosewin_blink_on_land = 0
+" vim-quickrun
+let g:quickrun_config={'*': {'split': ''}}
+set splitbelow
+
+set t_Co=256
+
+syntax enable
+colorscheme molokai
+
+let g:molokai_original = 1
+let g:rehash256 = 1
+
