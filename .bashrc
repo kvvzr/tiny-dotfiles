@@ -18,6 +18,7 @@ alias ls='ls -hG'
 alias la='ls -a'
 alias ll='ls -la'
 alias a='./a.out'
+alias vf='vim -c "VimFiler -split -simple -winwidth=35 -toggle -no-quit -auto-cd"'
 
 auto_cdls()
 {
