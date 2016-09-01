@@ -14,7 +14,6 @@ if [ "$(uname)" = 'Darwin' ]; then
 else
     alias ls='ls --color=auto'
 fi
-alias ls='ls -hG'
 alias la='ls -a'
 alias ll='ls -la'
 alias a='./a.out'
