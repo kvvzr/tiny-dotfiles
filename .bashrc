@@ -27,4 +27,4 @@ auto_cdls()
     fi
 }
 PROMPT_COMMAND="$PROMPT_COMMAND"$'\n'auto_cdls
-
+PS1='\[\033[00m\]\[\033[01;34m\]\u@\h\[\033[00m\]:\w \$ \[\033[01;32m\]$(if git status &>/dev/null;then echo [$(git branch | cut -d" "  -f2-) $(git status -s |wc -l)];fi)\[\033[00m\] '
