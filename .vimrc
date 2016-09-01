@@ -6,6 +6,8 @@ set wrap " 折り返し
 set expandtab tabstop=4 shiftwidth=4 " インデントの設定
 set whichwrap=b,s,h,l,[,],<,>
 set smartindent
+set smarttab
+set ambiwidth=double
 set clipboard=unnamed,autoselect
 set novisualbell t_vb= " ベルを無効化
 set nowritebackup nobackup noswapfile " Swapファイルの無効化
