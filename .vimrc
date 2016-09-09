@@ -90,6 +90,9 @@ call neobundle#end()
 nmap <C-K> <Plug>(caw:i:toggle)
 vmap <C-K> <Plug>(caw:i:toggle)
 
+"choosewinのやつ
+nmap - <Plug>(choosewin)
+
 let g:indentLine_faster = 1
 
 let g:vimfiler_as_default_explorer=1
