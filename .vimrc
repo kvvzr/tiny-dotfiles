@@ -81,6 +81,9 @@ NeoBundle 'itchyny/lightline.vim'
 NeoBundle 'tomasr/molokai'
 NeoBundle 't9md/vim-choosewin'
 NeoBundle 'tyru/caw.vim.git'
+NeoBundle 'ConradIrwin/vim-bracketed-paste'
+NeoBundle 'vim-scripts/nginx.vim'
+NeoBundle 'fatih/vim-go'
 
 NeoBundleCheck
 
