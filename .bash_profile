@@ -13,6 +13,7 @@ alias ls='ls --color=auto'
 alias la='ls -a'
 alias ll='ls -la'
 alias vf='vim -c "VimFiler -split -simple -winwidth=35 -toggle -no-quit -auto-cd"'
+alias g='git'
 
 auto_cdls()
 {
