@@ -88,3 +88,16 @@ syntax enable
 if dein#check_install()
   call dein#install()
 endif
+
+" Ruby syntax highlight
+autocmd ColorScheme * highlight rubyModule cterm=bold ctermfg=3
+autocmd ColorScheme * highlight rubyClass cterm=bold ctermfg=3
+autocmd ColorScheme * highlight rubyDefine cterm=bold ctermfg=3
+autocmd ColorScheme * highlight rubyConditional cterm=bold ctermfg=3
+autocmd ColorScheme * highlight rubyBlock cterm=bold ctermfg=3
+autocmd ColorScheme * highlight rubyConstant ctermfg=5
+autocmd ColorScheme * highlight rubyString ctermfg=2
+autocmd ColorScheme * highlight rubyInteger ctermfg=2
+autocmd ColorScheme * highlight rubySymbol ctermfg=6
+autocmd ColorScheme * highlight rubyFunction ctermfg=3
+autocmd ColorScheme * highlight rubyPredefinedConstant ctermfg=5
