@@ -3,7 +3,7 @@ set ruler " カーソル位置の表示
 set number " 行番号の表示
 set list listchars=tab:>-,trail:-,extends:>,precedes:<,nbsp:%,eol:$ " 不可視文字の表示
 set wrap " 折り返し
-set expandtab tabstop=4 shiftwidth=4 " インデントの設定
+set expandtab tabstop=2 shiftwidth=2 " インデントの設定
 set whichwrap=b,s,h,l,[,],<,>
 set smartindent
 set smarttab
