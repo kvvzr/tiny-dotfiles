@@ -1,0 +1,38 @@
+[[plugins]]
+repo = 'Shougo/dein.vim'
+
+[[plugins]]
+repo = 'Shougo/unite.vim'
+
+[[plugins]]
+repo = 'Shougo/vimfiler.vim'
+
+[[plugins]]
+repo = 'itchyny/lightline.vim'
+
+[[plugins]]
+repo = 'tomasr/molokai'
+hook_add = '''
+  au MyAutoCmd VimEnter * nested colorscheme molokai
+'''
+
+[[plugins]]
+repo = 't9md/vim-choosewin'
+hook_add = '''
+  nmap - <Plug>(choosewin)
+'''
+
+[[plugins]]
+repo = 'Yggdroot/indentLine'
+hook_add = '''
+  let g:indentLine_faster = 1
+'''
+
+[[plugins]]
+repo = 'jszakmeister/vim-togglecursor'
+hook_add = '''
+  let g:togglecursor_default = "block"
+  let g:togglecursor_insert = "line"
+  let g:togglecursor_leave = "line"
+  let g:togglecursor_disable_tmux = 0
+'''
