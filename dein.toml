@@ -36,3 +36,6 @@ hook_add = '''
   let g:togglecursor_leave = "line"
   let g:togglecursor_disable_tmux = 0
 '''
+
+[[plugins]]
+repo = 'ConradIrwin/vim-bracketed-paste'
