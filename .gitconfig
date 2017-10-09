@@ -1,0 +1,13 @@
+[color]
+  diff = auto
+  status = auto
+  branch = auto
+  grep = auto
+[alias]
+  st = status
+  co = checkout
+  ci = commit -v
+  di = diff
+  br = branch
+  pl = !git pull --rebase && git submodule update --init
+  lg = log -p --stat --abbrev-commit --decorate --topo-order
